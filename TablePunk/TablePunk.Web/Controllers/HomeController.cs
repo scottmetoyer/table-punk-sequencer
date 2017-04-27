@@ -25,7 +25,7 @@ namespace TablePunk.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult UploadFiles(IList<IFormFile> files)
+        public IActionResult Upload(IList<IFormFile> files)
         {
             long size = 0;
             foreach (var file in files)
